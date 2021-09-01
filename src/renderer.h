@@ -3,6 +3,7 @@
 
 #include <vector>
 #include "SDL.h"
+#include "SDL_ttf.h"
 #include "snake.h"
 
 class Renderer {
@@ -17,7 +18,8 @@ class Renderer {
  private:
   SDL_Window *sdl_window;
   SDL_Renderer *sdl_renderer;
-
+  //Text rendering for score display
+ 
   const std::size_t screen_width;
   const std::size_t screen_height;
   const std::size_t grid_width;
