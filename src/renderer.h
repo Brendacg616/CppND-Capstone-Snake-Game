@@ -22,6 +22,15 @@ class Renderer {
   const std::size_t screen_height;
   const std::size_t grid_width;
   const std::size_t grid_height;
+
+  //My code
+  //I want to add some extra space in order to display info
+  //It will be the same width than the screen, just height needed
+  const std::size_t extra_space_height{50};
+
+  void GameboardPosition(SDL_Rect &block, const SDL_Point &point);
+
+
 };
 
 #endif
