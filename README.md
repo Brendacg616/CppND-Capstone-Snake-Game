@@ -23,6 +23,10 @@ In this project, you can build your own C++ application or extend this Snake gam
   * Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
   * Windows: recommend using [MinGW](http://www.mingw.org/)
 
+## Udacity Environment 
+* Install SDL2_TTF
+  * `sudo apt-get install libsdl2-ttf-dev`
+  
 ## Basic Build Instructions
 
 1. Clone this repo.

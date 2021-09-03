@@ -25,7 +25,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
     // Input, Update, Render - the main game loop.
     controller.HandleInput(running, snake);
     Update();
-    renderer.Render(snake, food);
+    renderer.Render(snake, food, score);
 
     frame_end = SDL_GetTicks();
 
@@ -39,6 +39,7 @@ void Game::Run(Controller const &controller, Renderer &renderer,
       renderer.UpdateWindowTitle(score, frame_count);
       frame_count = 0;
       title_timestamp = frame_end;
+      
     }
 
     // If the time for this frame is too small (i.e. frame_duration is
